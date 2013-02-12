@@ -2,7 +2,7 @@
 ###################
 *.com
 *.class
-*.dll
+n*.dll
 *.exe
 *.o
 *.so
@@ -36,3 +36,4 @@ ehthumbs.db
 Icon?
 Thumbs.db
 *~
+.sass-cache/
