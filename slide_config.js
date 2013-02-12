@@ -18,12 +18,11 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Firstname Lastname',
-    company: 'Job Title, Google',
-    gplus: 'http://plus.google.com/1234567890',
-    twitter: '@yourhandle',
-    www: 'http://www.you.com',
-    github: 'http://github.com/you'
+    name: 'Ethan Sherbondy',
+    company: 'Webmaster, StartLabs',
+    twitter: '@sherbondy',
+    www: 'http://www.startlabs.org',
+    github: 'http://github.com/StartLabs/startlabs'
   }/*, {
     name: 'Second Name',
     company: 'Job Title, Google',
