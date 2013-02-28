@@ -19,6 +19,7 @@ URL: https://code.google.com/p/io-2012-slides
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="stylesheet" media="all" href="theme/css/default.css">
   <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <link rel="stylesheet" href="theme/css/custom.css">
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
   <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
 </head>
@@ -37,29 +38,54 @@ URL: https://code.google.com/p/io-2012-slides
   </slide>
 
   <slide>
+    <aside class="note">
+      <section>
+        <ul>
+          <li>This is the question I asked myself at the end of the summer.</li>
+          <li>I'm the software guy for a student group called StartLabs.</li>
+          <li>We give engineering students the resources to start companies.</li>
+          <li>We also encourage kids to intern at startups over the summer to see if they like the lifestyle.</li>
+          <li>Thought it made sense to provide a jobs list as a service to the MIT community.</li>
+          <li>So I set out to build it. Here were the goals I had in mind...</li>
+          <li>Balancing act between exposing powerful functionality while maintaining ease-of-use, both for students browsing and for companies submitting.</li>
+          <li>And have fields that make sense in the context of startups. I want to know how large the company is. Location is important.</li>
+        </ul>
+      </section>
+    </aside>
+
     <hgroup>
-      <h2>I am Taking Over the Course 6 Jobs List</h2>
-      <h3>And Engineering the Hell Out of It</h3>
+      <h2>What does a Jobs List for Startups Look Like?</h2>
     </hgroup>
+
     <article class="build">
       <ul class="build">
-        <li>Infatuated with Startups at an early age.</li>
-        <li>Want to help fellow MIT students find
-          jobs/internships at Startups.</li>
-        <li>Current jobs list is not catered towards
-          Startups. Difficult to explore all listings.</li>
-        <li>Is every bullet point going to contain the word startup?</li>
-        <li class="build">
-          <span>No.</span>
-          <span>Startup.</span>
-        </li>
+        <li>Website Form-factor</li>
+        <li>Goals:</li>
       </ul>
-
-      <h3>Requirements</h3>
-      <ul class="build">
-        <li>Usable</li>
-        <li>Feature-rich</li>
-        <li>Easily-extensible</li>
+      <table class="rows">
+        <tr>
+          <th>Students</th>
+          <th>Companies</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Easily-navigable</li>
+              <li>Powerful queries</li>
+              <li>Extensible & Open Source</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Exposure</li>
+              <li>NO PASSWORDS</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <br/>
+      <ul>
+        <li>Unanticipated Responsibility...</li>
       </ul>
     </article>
   </slide>
@@ -76,10 +102,10 @@ URL: https://code.google.com/p/io-2012-slides
   <slide>
     <hgroup>
       <h2>Clojure(Script), Oh La La</h2>
-      <h3>A Lisp that targets the JVM and JavaScript.</h3>
+      <h3>(Thoughtfully) Blurring the Line Between Client and Server</h3>
     </hgroup>
-    <article>
-      <pre class="prettyprint" data-lang="lang-clj">
+    <article class="build">
+      <pre class="prettyprint code-box" data-lang="clojure">
         <code class="lang-clj">
           (defn job-card [job-info editable?]
             [:div.job-info
@@ -96,6 +122,11 @@ URL: https://code.google.com/p/io-2012-slides
                     "Resend edit link to author"]])]])
         </code>
       </pre>
+
+      <img id="computer" src="images/computer.png">
+      <img id="server" src="images/server.png">
+      <h2 id="html">&lt;HTML&gt;</h2>
+      <iframe data-src="http://www.startlabs.org/jobs" id="mini-site"></iframe>
     </article>
   </slide>
 

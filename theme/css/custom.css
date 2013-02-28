@@ -1,0 +1,44 @@
+slide .code-box {
+    width: 320px;
+    font-size: 8px;
+    line-height: 1.2;
+    left: 0px;
+    padding: 0px;
+    margin: -32px auto 0px;
+}
+slide .code-box:after {
+    content: "CODE";
+}
+
+#computer {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 240px;
+    left: 40px;
+}
+
+#server {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 230px;
+    right: 40px;
+}
+
+#html {
+    font-size: 64px;
+    font-family: monospace;
+    position: absolute;
+    text-align: center;
+    top: 500px;
+    left: 440px;
+}
+
+#mini-site {
+    width: 1024px;
+    height: 598px;
+    position: absolute;
+    -webkit-transform: scale(0.18);
+    -webkit-transform-origin: -15px -66px;
+}
